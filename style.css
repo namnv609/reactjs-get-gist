@@ -1,0 +1,63 @@
+.frm {
+  float: left;
+  width: 33.3333%;
+  position: relative;
+  padding: 2rem 0;
+}
+.frm input {
+  padding: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #008A45;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+.frm input:focus {
+  outline: 0;
+}
+.frm input:focus ~ label {
+  color: #008A45;
+  top: 15px;
+  -webkit-transition: all 0.125s ease;
+  transition: all 0.125s ease;
+  font-size: 12px;
+}
+.frm input:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.frm input ~ span {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #F00;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  -webkit-transition: all 0.125s ease;
+  transition: all 0.125s ease;
+}
+.frm label {
+  color: #008A45;
+  padding: 0 0 1rem 0;
+}
+
+.gists {
+  clear: both;
+}
+.gists .gist {
+  padding: 5px;
+  border: 1px solid #000;
+  margin: 5px 0;
+}
+.gists .gist a {
+  color: #00F;
+  text-decoration: none;
+}
+.gists .gist a:hover {
+  color: #F00;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

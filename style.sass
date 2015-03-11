@@ -1,0 +1,54 @@
+$mainColor: #008A45
+
+.frm
+    float: left
+    width: 33.3333%
+    position: relative
+    padding: 2rem 0
+    input
+        &:focus
+            outline: 0
+            ~ label
+                color: $mainColor
+                top: 15px
+                -webkit-transition: all 0.125s ease
+                transition: all 0.125s ease
+                font-size: 12px
+            ~ span
+                width: 100%
+                -webkit-transition: all 0.3s ease
+                transition: all 0.3s ease
+        padding: 5px 0
+        border: 0
+        border-bottom: 1px solid $mainColor
+        width: 100%
+        font-size: 1rem
+        margin: 0 0 10px 0
+        ~ span
+            display: block
+            width: 0
+            height: 3px
+            background: #F00
+            position: absolute
+            bottom: 65px
+            left: 0
+            -webkit-transition: all 0.125s ease
+            transition: all 0.125s ease
+
+    label
+        color: $mainColor
+        padding: 0 0 1rem 0
+
+.gists
+    clear: both
+    
+    .gist
+        padding: 5px
+        border: 1px solid #000
+        margin: 5px 0
+        a
+            color: #00F
+            text-decoration: none
+            &:hover
+                color: #F00
+                text-decoration: underline
